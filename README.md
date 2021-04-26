@@ -4,17 +4,17 @@ The App should be able to take in three fundamental information of a person. The
 
 Successful changes:
 
--The user information will be saved as soon as you press on generate. Next time you open the app it's ready
--Better keyboard management. The keyboard hides after any tap on the screen outside of the textfields
--The UI of the app has improved
--Whitespaces will be detected and disable the "generate" button
--At least 2 letters for names required and 7 digits for the phone number or the "generate" button stays disabled
+-The user information will be saved as soon as you press on generate. Next time you open the app it's ready         
+-Better keyboard management. The keyboard hides after any tap on the screen outside of the textfields         
+-The UI of the app has improved         
+-Whitespaces will be detected and disable the "generate" button         
+-At least 2 letters for names required and 7 digits for the phone number or the "generate" button stays disabled      
 
 
 NEXT STEPS:
 
--Make the QR-Code look more "sharp"
--Phone number textfield won't allow pasting in anything else than numbers
--Work more on the auto layout
+-Make the QR-Code look more "sharp"       
+-Phone number textfield won't allow pasting in anything else than numbers     
+-Work more on the auto layout     
 
 -If possible add an option that includes your generated QR-Code to the Apple Wallet (maybe with PassKit)
