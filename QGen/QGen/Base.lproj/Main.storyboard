@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="QGen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <userGuides>
+                            <userLayoutGuide location="21" affinity="minX"/>
+                            <userLayoutGuide location="393" affinity="minX"/>
+                        </userGuides>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="XqS-Uj-Uj1">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Design ohne Titel (5)" translatesAutoresizingMaskIntoConstraints="NO" id="Xpo-hq-hHZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="111"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="111" id="yhA-aI-jiC"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="bPR-Vc-ldp">
+                                        <rect key="frame" x="0.0" y="119" width="414" height="349"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QR-Code erstellen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ote-6G-s31">
+                                                <rect key="frame" x="21" y="-9" width="372" height="46"/>
+                                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="28"/>
+                                                <color key="textColor" red="0.11764705882352941" green="0.12549019607843137" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="highlightedColor" red="0.11764705882352941" green="0.12549019607843137" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="gYq-uQ-Nx5">
+                                                <rect key="frame" x="21" y="56" width="372" height="167"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OCe-cE-FTo">
+                                                        <rect key="frame" x="0.0" y="0.0" width="372" height="43"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="43" id="5dt-NR-ggf"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <connections>
+                                                            <action selector="nameTyped:" destination="BYZ-38-t0r" eventType="editingChanged" id="PqF-eF-3Kb"/>
+                                                        </connections>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Familienname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ORI-ME-dh4">
+                                                        <rect key="frame" x="0.0" y="62" width="372" height="43"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="43" id="Q56-fX-j32"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="famNameTyped:" destination="BYZ-38-t0r" eventType="editingChanged" id="Q8P-SA-hzp"/>
+                                                        </connections>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Telefonnummer" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WIZ-QQ-pgz">
+                                                        <rect key="frame" x="0.0" y="124" width="372" height="43"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="43" id="jpm-rq-GCc"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="ASCIICapableNumberPad"/>
+                                                        <connections>
+                                                            <action selector="phoneTyped:" destination="BYZ-38-t0r" eventType="editingChanged" id="yE0-7T-pic"/>
+                                                        </connections>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w2c-b9-eef">
+                                                <rect key="frame" x="21" y="242" width="372" height="38"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="38" id="PQF-eJ-Sx1"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xCF-0V-5dZ">
+                                                <rect key="frame" x="21" y="299" width="372" height="42"/>
+                                                <color key="backgroundColor" red="0.11764705882352941" green="0.12549019607843137" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="42" id="i3R-z2-qgv"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="19"/>
+                                                <state key="normal" title="Generieren">
+                                                    <color key="titleColor" red="0.94117647058823528" green="0.96078431372549022" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <integer key="value" value="22"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="generateAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZP0-Ie-fZY"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <edgeInsets key="layoutMargins" top="-9" left="21" bottom="8" right="21"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="p3F-jw-loD">
+                                        <rect key="frame" x="0.0" y="476" width="414" height="386"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="200" translatesAutoresizingMaskIntoConstraints="NO" id="xd7-GE-fys">
+                                                <rect key="frame" x="22" y="8" width="370" height="370"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="370" id="gFA-0t-H5o"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <edgeInsets key="layoutMargins" top="8" left="22" bottom="8" right="22"/>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.94117647058823528" green="0.96078431372549022" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XqS-Uj-Uj1" secondAttribute="bottom" id="Vd7-E3-0oY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XqS-Uj-Uj1" secondAttribute="trailing" id="Wdq-eG-WIu"/>
+                            <constraint firstItem="XqS-Uj-Uj1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fuQ-nK-A7h"/>
+                            <constraint firstItem="XqS-Uj-Uj1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="xvo-xb-6i5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="familyName" destination="ORI-ME-dh4" id="p61-Dp-6pV"/>
+                        <outlet property="generateButton" destination="xCF-0V-5dZ" id="Pjp-hq-b7v"/>
+                        <outlet property="name" destination="OCe-cE-FTo" id="icV-R6-NIV"/>
+                        <outlet property="phoneNumber" destination="WIZ-QQ-pgz" id="vOb-Dl-pn8"/>
+                        <outlet property="qrImageView" destination="xd7-GE-fys" id="pEF-UA-LBo"/>
+                        <outlet property="validationMessage" destination="w2c-b9-eef" id="Hfm-wS-iyQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="78.348214285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Design ohne Titel (5)" width="2304" height="1152"/>
+    </resources>
+</document>
